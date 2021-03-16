@@ -1,0 +1,56 @@
+.button
+  margin-right: 16px
+  padding: 13px 21px
+
+  font-weight: 700
+  font-size: 15px
+  color: $button-text
+  
+  border: 1px solid $button-text
+  border-radius: 3px
+  background-color: transparent
+  cursor: pointer
+
+  transition: color .2s linear, background-color .2s linear, border-color .2s linear
+
+  &__login, &__start
+    padding: 0
+
+    font-weight: 700
+    font-size: 13px
+
+    background-color: transparent
+    border: 0
+    cursor: pointer
+
+    position: relative
+    
+  &__login
+    margin-right: 40px
+    color: $button-login
+
+    &::after
+      position: absolute
+      content: ''
+      height: 24px
+      width: 1px
+      right: -20px
+      top: 50%
+      transform: translateY(-50%)
+      background-color: #D4D4D4
+  
+  &__start
+    color: $button-bg
+
+  &:hover
+    color: $text-main-color
+    background-color: $button-text
+
+  &-primary
+    border-color: $button-bg
+    background-color: $button-bg
+
+    &:hover
+      color: $button-text
+      background-color: darken($button-bg, 8%)
+      border-color: darken($button-bg, 8%)

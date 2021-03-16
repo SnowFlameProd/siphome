@@ -2,4 +2,54 @@
 @import "../../../node_modules/normalize.css/normalize"
 
 body
-  background-color: 
+  font-family: 'Inter', sans-serif
+  font-size: 15px
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+  width: 100%
+  max-width: 1230px
+
+.img
+  display: block
+  max-width: 100%
+  height: auto
+
+a
+  text-decoration: none
+
+p
+  margin: 0
+
+ul
+  margin: 0
+  padding-left: 0
+  list-style: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+*,
+*::after,
+*::before
+  box-sizing: border-box
+
+.page
+  height: 100vh
+  display: flex
+  flex-direction: column
+
+// Vars
+@import "vars"
+
+// Blocks
+@import "blocks/header"
+@import "blocks/logo"
+@import "blocks/nav"
+@import "blocks/hero"
+@import "blocks/button"
+
+
+// Media
+@import "media"
