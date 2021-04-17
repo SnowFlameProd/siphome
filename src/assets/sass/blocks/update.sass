@@ -1,0 +1,58 @@
+.update
+  margin-top: 146px
+  min-height: 1103px
+
+  background:  url(../img/update/dot-center.png) top 222px center, url(../img/update/dot-right.png) bottom right, url(../img/update/update-bg.png) top right
+  background-repeat: no-repeat
+  background-size: auto, auto, 50% 100%
+
+  position: relative
+
+  &-bg  
+    position: absolute
+    left: 0
+    bottom: -20px
+    z-index: 1
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    position: relative
+
+  &__left-col
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__header
+    padding-top: 54px
+
+    max-width: 440px
+
+  &__img
+    margin-left: -120px
+
+  &__item
+    padding: 30px
+    max-width: 500px
+    display: flex
+
+    &s
+      padding-top: 74px
+      margin-left: auto
+
+    &-content
+      margin-left: 30px
+
+    &-title
+      margin-bottom: 16px
+
+      font-size: 18px
+      font-weight: 600
+      line-height: 24px
+      color: $update-text-color
+
+    &-text
+      font-size: 15px
+      line-height: 24px
+      color: $update-text-color

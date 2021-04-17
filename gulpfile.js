@@ -106,7 +106,9 @@ function js() {
 
 function images() {
   return src(path.src.images)
-    .pipe(imagemin())
+    .pipe(imagemin([
+      imagemin.mozjpeg({quality: 100})
+    ]))
     .pipe(dest(path.build.images));
 }
 

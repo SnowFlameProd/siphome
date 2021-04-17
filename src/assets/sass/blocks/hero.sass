@@ -31,19 +31,17 @@
 
   &-image
     &__large, &__small
-      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
-      overflow: hidden
+      box-shadow: $shadow
+      border-radius: 24px
       position: absolute
 
     &__large
-      border-radius: 24px
       right: 0
       top: 50%
       transform: translateY(-50%)
       z-index: 1
 
     &__small
-      border-radius: 24px
       right: -148px
       top: 384px
       z-index: 2

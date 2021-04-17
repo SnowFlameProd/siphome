@@ -4,6 +4,7 @@
 body
   font-family: 'Inter', sans-serif
   font-size: 15px
+  overflow-x: hidden
 
 .container
   margin: 0 auto
@@ -35,6 +36,9 @@ h1, h2, h3, h4, h5, h6
 *::before
   box-sizing: border-box
 
+.gradient
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -9.97%, #ECF0F7 100%)
+
 // Vars
 @import "vars"
 
@@ -46,6 +50,9 @@ h1, h2, h3, h4, h5, h6
 @import "blocks/hero"
 @import "blocks/button"
 @import "blocks/features"
+@import "blocks/update"
+@import "blocks/services"
+@import "blocks/testimonials"
 
 
 // Media
